@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="demo.css" rel="stylesheet" media="screen">
+    <title>BestCRM - Add Intergration</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.png">
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class='App'>
+      <div class='header'>
+        <div class='company flex-fixed'>
+          <img class='logo' src='logo-purple.svg' alt='Logo' />
+          <div class='name'>BestCRM</div>
+        </div>
+        <div class='search flex-grow'>
+          <div class='search-form'>
+            <img class='unselectable search-icon' src='search.svg' alt='' />
+            <form>
+              <input type='text' name='q' placeholder='Search...' />
+            </form>
+          </div>
+        </div>
+        <div class='user flex-fixed'>
+          <img class='avatar' src='user.svg' alt='profile' />
+          <div class='name'> John Smith </div>
+          <img src='chevron-down.svg' class="chevron" />
+        </div>
+        <div class='clear'> </div>
+      </div>
+      <div class='main flex'>
+        <div class='sidebar flex-fixed'>
+          <ul>
+            <li>Dashboard</li>
+            <li>Channels</li>
+            <li>Sales</li>
+            <li>Reports</li>
+            <li class="selected">Integrations</li>
+            <li>Settings</li>
+          </ul>
+        </div>
+        <div class='content flex-column flex-grow'>
+          <div>
+          <h3 class='flex-fixed'>Add integration &rarr; On new lead</h3>
+          <!-- <p>Will be called  a new lead is added</p> -->
+          <div id="widget"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

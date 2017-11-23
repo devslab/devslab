@@ -1,0 +1,14 @@
+{
+  "font": "\"Noto Sans\", Nunito, Lato, 'Open Sans', Arial, sans-serif",
+  "base_font_size": "14px",
+  "main_color": "#f35958",
+  "link_color": "#399BE6",
+  "link_hover": "#399BE6",
+  "main_background": "#fff",
+  "border": "#EEEEEE",
+  "panel_background": "#F2F2F2",
+  "muted_text": "#828282",
+  "tab_inactive": "#E0E0E0",
+  "foldable": "#777",
+  "log_background": "#ffffe0"
+}
