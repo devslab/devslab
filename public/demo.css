@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #828282;
+}
+input, textarea, select, button {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-fixed {
+  flex: 0 1 auto;
+  order: 0;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+.flex-grow {
+  flex: 1 1 auto;
+  order: 0;
+  align-self: stretch;
+  box-sizing: border-box;
+}
+.unselectable {
+  user-select: none;
+}
+#widget {
+  min-width: 70vw;
+  height: 75%;
+  height: calc(100vh - 60px - 100px);
+  // width: 500px;
+  flex-grow: 1;
+  position: relative;;
+  border: 1px solid #eee;
+}
+
+.App {
+  height: 100%;
+  height: 100vh;
+  min-height: 100%;
+  background: #fafafa;
+}
+.App *:focus {
+  /*outline: 2px solid #fcd6d5;*/
+}
+.header {
+  height: 60px;
+  display: flex;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
+}
+.header > div {
+  line-height: 60px;
+}
+.header .company {
+  height: 100%;
+  margin: 0 10px;
+/* CUSTOMER SERVICE */
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #828282;
+  opacity: 1;
+}
+.header .company .logo {
+  margin: 10px;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+}
+.header .company .name {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+.header .search {
+  height: 100%;
+  color: #bdbdbd;
+  margin: 0 50px;
+}
+.header .search .search-form {
+  vertical-align: middle;
+  display: inline-block;
+}
+.header .search form {
+  margin: 0 5px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.header .search input {
+  border: 0px;
+  padding: 0 15px;
+}
+.header .search .search-icon {
+  vertical-align: middle;
+  width: 21px;
+  margin-right: -6px;
+}
+.header .user {
+  height: 100%;
+  margin-right: 30px;
+/* John Smith */
+  opacity: 1;
+}
+.header .user .chevron {
+  width: 12px;
+  opacity: 0.6;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.integration-heading {
+  height: 10%;
+  width: 100%;
+}
+.integration-heading h3 {
+  margin: 0;
+  padding: 0;
+}
+.header .user .name {
+  vertical-align: middle;
+  display: inline-block;
+}
+.header .user .avatar {
+  margin: 10px;
+  vertical-align: middle;
+  border-radius: 20px;
+  width: 42px;
+  height: 42px;
+}
+.main .sidebar {
+  width: 200px;
+/* Rectangle 7 */
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+  z-index: 1;
+  height: calc(100vh - 60px);
+}
+.main .content {
+  padding: 20px 0 0 50px;
+  display: flex;
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
+}
+.main .content h3 {
+/* Add integration */
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 100%;
+  color: #828282;
+  opacity: 1;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  color: #715476;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.sidebar ul li.selected {
+  background-color: #ddd2df;
+}
+
+.sidebar ul li:hover {
+  background-color: #fafafa;
+}
